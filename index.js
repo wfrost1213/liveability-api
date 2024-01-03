@@ -9,10 +9,7 @@ const API_KEY = "rnd_A5jUpc4gRMRegFyvKAEhlvPmc6Z1";
 
 app.use(function (req, res, next) {
   // Website you wish to allow to connect
-  res.setHeader(
-    "Access-Control-Allow-Origin",
-    "http://localhost:5173, https://urban-liveability.me"
-  );
+  res.setHeader("Access-Control-Allow-Origin", "*");
 
   // Request methods you wish to allow
   res.setHeader(
